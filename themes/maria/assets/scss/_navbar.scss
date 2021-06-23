@@ -1,0 +1,60 @@
+.nav-item .active {
+    font-weight: 700;
+    border-bottom: 2px solid white;
+}
+
+.nav-link {
+    color: $white !important;
+
+    &:hover,
+    .nav-link:focus {
+        color: $primary !important;
+    }
+    &.active {
+        color: $primary !important;
+        font-weight: 700;
+        border-bottom: 2px solid white;
+    }
+}
+.navbar-brand {
+    max-width: 60px !important;
+}
+
+#second-navbar {
+    a {
+        @extend .text-primary;
+        @extend .text-uppercase;
+        @extend .fw-bold;
+
+        &:hover,
+        &:focus {
+            opacity: 80% !important;
+        }
+    }
+    .active {
+        background-color: black !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        background-color: $secondary !important;
+        opacity: 0.95;
+        box-shadow: 0 0.5rem 1rem rgba($black, 0.15);
+    }
+}
+@media (min-width: 992px) {
+    .navbar {
+        background-color: none !important;
+    }
+}
+
+/*
+@media (max-width: 576px) { 
+    #nav {
+    @extend .bg-dark;
+    @extend .shadow;
+    @extend .o-95;
+    }
+}
+*/

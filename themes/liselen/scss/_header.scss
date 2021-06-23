@@ -1,0 +1,42 @@
+header{
+    background: url(img/header2.jpg) no-repeat center;
+    height:400px;
+
+    
+
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        .nav-item{
+            z-index: 1;
+            padding:0.5em 1em;
+            background:$color-1
+            
+        }
+        .navbar-nav{
+            margin-top: 0.5em;
+            
+            
+        }
+
+    }
+        
+    
+
+    @media (min-width: 992px) {
+        .nav-item{
+            margin: 1em 0.5em;
+            border-radius: 4px;
+            background: $color-1;
+            z-index: 1;
+            
+
+            &:hover{
+                background:$color-2;
+                
+        
+            }
+        } 
+    }
+
+}
+
+

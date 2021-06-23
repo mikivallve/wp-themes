@@ -1,0 +1,38 @@
+/*!
+Theme Name: Joaquin
+Theme URI: ----
+Author: Joaquin
+Author URI: ----
+Description: Tema para usar en tu entrega
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Joaquin
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+//Responsive
+@import 'responsive/responsive';
+
+@import 'global';
+@import 'utilities';
+@import 'extend';
+@import 'mixin';
+
+//Sections
+@import 'sections/header';
+@import 'sections/hero';
+@import 'sections/noticias';
+@import 'sections/fixture-resumen';
+@import 'sections/plantel';
+@import 'sections/footer';
+
+//Components
+@import 'components/tables';
+@import 'components/card';
+@import 'components/tabs';
+@import 'components/accordion';

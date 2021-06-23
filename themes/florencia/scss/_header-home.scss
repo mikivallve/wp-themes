@@ -1,0 +1,65 @@
+.header-home {
+    background-color: $home-background;
+    background-image: url(../assets/illustrations/mobile-header-home-background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 626px;
+
+    .header-btns {
+        display: none;
+    }
+}
+.header-blurb {
+    max-width: 452px;
+
+    p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+// Media queries
+@include media-breakpoint-up(md) {
+    .header-home {
+        background-image: url(../assets/illustrations/header-home-background.svg);
+        background-position: 66%;
+    }
+    .header-blurb {
+        float: left;
+        margin-left: 1.75rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .header-home {
+        background-position: center;
+
+        h1 {
+            font-size: 50px;
+        }
+        .btn-appstore {
+            display: none;
+        }
+    }
+    .header-blurb {
+        max-width: 780px;
+        float: none;
+        margin-left: 0;
+        margin: 0 auto;
+
+        p {
+            font-size: 18px;
+            line-height: 32px;
+        }
+    }
+    .header-btns {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+
+        a:nth-child(1) {
+            margin-right: 25px;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+.header-about p {
+    font-size: 16px;
+    line-height: 30px;
+}
+.about-blurb {
+    max-width: 630px;
+
+    h1 {
+        font-size: 44px;
+    }
+}
+.header-about img {
+    max-width: 90%;
+}
+.our-story h2 {
+    font-weight: 800;
+}
+.our-story h4 {
+    color: $primary;
+}
+.office h2 {
+    color: $secondary;
+}
+.office, .work-with-us {
+    background-color: $font-color;
+}
+.work-with-us {
+
+    .card {
+        border-radius: 16px;
+    }
+    h4 {
+        color: $primary;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+@include media-breakpoint-up(md) {
+    .work-with-us .btn {
+        width: unset;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .about-blurb {
+        max-width: 500px;
+        h1 {
+            font-size: 50px;
+        }
+    }
+    .header-about p {
+        font-size: 18px;
+    }
+}

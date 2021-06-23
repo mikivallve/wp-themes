@@ -1,0 +1,314 @@
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.calendar {
+    width: 400px;
+    font-size: 100%;
+    margin: 0 auto;
+    perspective: 1000px;
+    cursor: default;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+    }
+
+    * {
+        color: white;
+    }
+    .header {
+        height: 100px;
+        position: relative;
+        color: #fff;
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #308ff0;
+            padding: 15px;
+            transform: rotateX(90deg);
+            transform-origin: bottom;
+            backface-visibility: visible;
+            transition: 0.4s ease-in-out 0s;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+            opacity: 1;
+            > span {
+                text-align: center;
+                padding: 20px;
+                display: block;
+                text-transform: uppercase;
+                font-weight: 400;
+            }
+        }
+        &.active {
+            .text {
+                transform: rotateX(0deg);
+                opacity: 1;
+            }
+        }
+    }
+}
+.months {
+    width: 100%;
+    height: 280px;
+    position: relative;
+    .hr {
+        height: 1px;
+        margin: 15px 0;
+        background: #ccc;
+    }
+}
+.month {
+    padding: 15px;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    backface-visibility: visible;
+    transition: all 0.4s ease-in-out 0s;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.01), 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+}
+
+.table {
+    width: 100%;
+    font-size: 10px;
+    font-weight: 400;
+    display: table;
+    .row {
+        display: table-row;
+        &.head {
+            color: #308ff0;
+            text-transform: uppercase;
+        }
+        .cell {
+            width: 14.28%;
+            padding: 5px;
+            text-align: center;
+            display: table-cell;
+            &.disable {
+                color: #ccc;
+            }
+            span {
+                display: block;
+                width: 28px;
+                height: 28px;
+                line-height: 28px;
+                transition: color, background 0.4s ease-in-out 0s;
+            }
+            &.active {
+                span {
+                    color: #fff;
+                    background-color: #308ff0;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+}
+
+.months .month[data-active='true'] {
+    transform: rotateY(0);
+}
+.header [data-action] {
+    color: inherit;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+    opacity: 1;
+    transition: all 0.4s ease-in-out 0s;
+    > i {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -10px;
+        margin-left: -10px;
+        &:before,
+        &:after {
+            top: 50%;
+            margin-top: -1px;
+            content: '';
+            position: absolute;
+            height: 2px;
+            width: 20px;
+            border-top: 2px solid;
+            border-radius: 2px;
+        }
+    }
+}
+
+.header [data-action*='prev'] {
+    left: 15px;
+    > i {
+        &:before,
+        &:after {
+            left: 0;
+        }
+        &:before {
+            top: 3px;
+            transform: rotate(-45deg);
+        }
+        &:after {
+            top: auto;
+            bottom: 3px;
+            transform: rotate(45deg);
+        }
+    }
+}
+.header [data-action*='next'] {
+    right: 15px;
+    > i {
+        &:before,
+        &:after {
+            right: 0;
+        }
+        &:before {
+            top: auto;
+            bottom: 3px;
+            transform: rotate(-45deg);
+        }
+        &:after {
+            top: 3px;
+            transform: rotate(45deg);
+        }
+    }
+}
+.header.active [data-action] {
+    opacity: 1;
+}
+
+[data-theme='january'] {
+    background-color: #90caf9;
+}
+[data-theme='january'] .row.head {
+    color: #1e88e5;
+}
+[data-theme='january'] .header .text,
+[data-theme='january'] .table .row .cell.active span {
+    background-color: #1e88e5;
+}
+
+[data-theme='february'] {
+    background-color: #81d4fa;
+}
+[data-theme='february'] .row.head {
+    color: #039be5;
+}
+[data-theme='february'] .header .text,
+[data-theme='february'] .table .row .cell.active span {
+    background-color: #039be5;
+}
+
+[data-theme='march'] {
+    background-color: #80cbc4;
+}
+[data-theme='march'] .row.head {
+    color: #00897b;
+}
+[data-theme='march'] .header .text,
+[data-theme='march'] .table .row .cell.active span {
+    background-color: #00897b;
+}
+
+[data-theme='april'] {
+    background-color: #c5e1a5;
+}
+[data-theme='april'] .row.head {
+    color: #7cb342;
+}
+[data-theme='april'] .header .text,
+[data-theme='april'] .table .row .cell.active span {
+    background-color: #7cb342;
+}
+
+[data-theme='may'] {
+    background-color: #ffe082;
+}
+[data-theme='may'] .row.head {
+    color: #ffb300;
+}
+[data-theme='may'] .header .text,
+[data-theme='may'] .table .row .cell.active span {
+    background-color: #ffb300;
+}
+
+[data-theme='june'] {
+    background-color: $primary;
+}
+[data-theme='june'] .row.head {
+    color: $primary;
+}
+[data-theme='june'] .header .text,
+[data-theme='june'] .table .row .cell.active span {
+    background-color: $primary;
+}
+
+[data-theme='july'] {
+    background-color: #ce93d8;
+}
+[data-theme='july'] .row.head {
+    color: #8e24aa;
+}
+[data-theme='july'] .header .text,
+[data-theme='july'] .table .row .cell.active span {
+    background-color: #8e24aa;
+}
+
+[data-theme='august'] {
+    background-color: #b39ddb;
+}
+[data-theme='august'] .row.head {
+    color: #5e35b1;
+}
+[data-theme='august'] .header .text,
+[data-theme='august'] .table .row .cell.active span {
+    background-color: #5e35b1;
+}
+
+[data-theme='september'] {
+    background-color: #ef9a9a;
+}
+[data-theme='september'] .row.head {
+    color: #e53935;
+}
+[data-theme='september'] .header .text,
+[data-theme='september'] .table .row .cell.active span {
+    background-color: #e53935;
+}
+
+[data-theme='october'] {
+    background-color: #ce93d8;
+}
+[data-theme='october'] .row.head {
+    color: #8e24aa;
+}
+[data-theme='october'] .header .text,
+[data-theme='october'] .table .row .cell.active span {
+    background-color: #8e24aa;
+}
+
+[data-theme='november'] {
+    background-color: #bcaaa4;
+}
+[data-theme='november'] .row.head {
+    color: #6d4c41;
+}
+[data-theme='november'] .header .text,
+[data-theme='november'] .table .row .cell.active span {
+    background-color: #6d4c41;
+}
+
+[data-theme='december'] {
+    background-color: #b0bec5;
+}
+[data-theme='december'] .row.head {
+    color: #546e7a;
+}
+[data-theme='december'] .header .text,
+[data-theme='december'] .table .row .cell.active span {
+    background-color: #546e7a;
+}

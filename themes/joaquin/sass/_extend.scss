@@ -1,0 +1,75 @@
+/*BODY*/
+body{
+    @extend .bg-primary;
+}
+
+/*NOTICIAS*/
+#noticias{
+    article{
+        @extend .card;
+        @extend .bg-dark;
+        @extend .text-white;
+        @extend .text-start;
+        @extend .h-100;
+    }
+}
+
+/*PLANTEL*/
+#plantel{
+    & > .row{
+        & > div{
+            @extend .col-12;
+            @extend .col-sm-6;
+            @extend .col-md-3;
+            @extend .col-lg-2;
+            article{
+                @extend .card;
+                @extend .bg-primary;
+                @extend .align-items-center;
+                figcaption{
+                    h3{
+                        @extend .card-title;
+                        @extend .text-white;
+                        @extend .fs-7;
+                    }
+                    p{
+                        @extend .card-text;
+                        @extend .text-white;
+                        @extend .fs-8;
+                    }
+                    a{
+                        @extend .btn;
+                        @extend .btn-secondary;
+                        @extend .fs-7;
+                        @extend .fw-bold;
+                    }
+                }
+            }              
+        }
+    }
+}
+
+/*FOOTER*/
+footer{
+    .sponsor{
+        ul{
+            li{
+                @extend .col-6;
+                @extend .col-sm-3; 
+                @extend .col-lg-2; @extend .col-xl-1;
+                @extend .text-center;
+                img{
+                    width: 100px;
+                }
+            }
+        }
+    }
+}
+
+/*GENERALES*/
+h2{
+    @extend .fs-3;
+    @extend .text-center;
+    @extend .text-secondary;
+    @extend .mb-5;      
+}

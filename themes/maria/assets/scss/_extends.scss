@@ -1,0 +1,5 @@
+#btn-card {
+    @extend .btn;
+    @extend .btn-primary;
+    @extend .float-end;
+}

@@ -1,0 +1,29 @@
+.btn-primary {
+    color: white !important;
+}
+
+.btn-light {
+    color: $secondary !important;
+    background-color: rgba($color: $white, $alpha: 0.3) !important;
+    border: solid 1px $white !important;
+
+    &:hover {
+        color: $body-color !important;
+        background: $black !important;
+        border: solid 1px $black !important;
+    }
+}
+
+.section {
+    .ver-mas {
+        @extend .btn;
+        @extend .btn-light;
+        @extend .float-end;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn-full {
+        width: 95% !important;
+    }
+}

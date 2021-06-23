@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <!--Fontawesome-->
+    <script src="https://kit.fontawesome.com/a22f56613a.js" crossorigin="anonymous"></script>
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>Club Atlético Peñarol</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar bg-secondary">
+            <div class="container m-auto">
+                <ul class="d-flex my-0 p-0">
+                    <li><a class="fs-7" href="">Mi cuenta</a></li>
+                </ul>
+                <ul class="d-flex my-0 p-0">
+                    <li class="px-1"><a class="fs-7" href=""><i class="fab fa-spotify"></i></a></li>
+                    <li class="px-1"><a class="fs-7" href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="px-1"><a class="fs-7" href=""><i class="fab fa-twitter"></i></a></li>
+                    <li class="px-1"><a class="fs-7" href=""><i class="fab fa-instagram"></i></a></li>
+                    <li class="px-1"><a class="fs-7" href=""><i class="fab fa-youtube"></i></a></li>
+                    <li class="px-1"><a class="fs-7" href=""><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="images/cap.svg"
+                        alt="escudo del Club Atlético Peñarol"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="calendario.html">Calendario</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="quierosersocio.html">Quiero ser socio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero -->
+        <section class="hero--small">
+            <div class="container d-flex justify-content-center align-items-center h-100">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="text-primary pb-4">QUIERO SER SOCIO</h1>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Contáctanos
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content bg-gray">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-secondary" id="exampleModalLabel">Quiero ser socio</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group mb-4">
+                                    <label class="text-secondary mb-2">Nombre</label>
+                                    <input class="form-control form-control" type="text" name="nombre"
+                                        placeholder="Ingrese su nombre">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="text-secondary mb-2">Apellido</label>
+                                    <input class="form-control form-control" type="text" name="apellido"
+                                        placeholder="Ingrese su apellido">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="text-secondary mb-2">Celular</label>
+                                    <input class="form-control form-control" type="text" name="celular"
+                                        placeholder="Ingrese su celular">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label class="text-secondary mb-2">Email</label>
+                                    <input class="form-control form-control" type="email" name="email"
+                                        placeholder="Ingrese su email">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-secondary">Enviar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Beneficios -->
+        <section class="container py-5">
+            <h2>Categorias</h2>
+            <!-- Tabs navs -->
+            <ul class="nav nav-pills nav-fill pb-3">
+                <li class="nav-item">
+                    <a class="nav-link text-secondary active" data-bs-toggle="tab" href="#infantil"
+                        aria-current="page">Infantil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" data-bs-toggle="tab" href="#cadete">Cadete</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" data-bs-toggle="tab" href="#suscriptor">Suscriptor</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" data-bs-toggle="tab" href="#interior">Cooperador del interior</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-secondary" data-bs-toggle="tab" href="#activo">Activo</a>
+                </li>
+            </ul>
+            <!-- Tabs content -->
+            <div class="tab-content">
+                <div class="tab-pane active" id="infantil">
+                    <div class="row py-2 text-white">
+                        <p>De 0 a 5 años</p>
+                        <ul>
+                            <li>Tendrán entrada libre a los partidos cuando el Club es locatario por campeonato Uruguayo
+                            </li>
+                            <li>Tendrán entrada libre a los partidos cuando el Club es locatario por Copa Libertadores
+                            </li>
+                            <li>Cuota anual $ 500 (promo 15 meses)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="cadete">
+                    <div class="row py-2 text-white">
+                        <p>De 6 a 11 años</p>
+                        <ul>
+                            <li>Tendrán entrada libre a los partidos cuando el Club es locatario por campeonato Uruguayo
+                            </li>
+                            <li>Tendrán hasta un 30% de descuento con respecto al precio de entradas de
+                                suscriptor/activo en Copa Libertadores</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen con débito automático, el costo de la cuota será:</p>
+                        <ul>
+                            <li>Cuota mensual $ 190</li>
+                            <li>Cuota anual $ 2.280 (promo 15 meses)</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen en Redpagos, en la sede o a través del cobrador, la cuota
+                            será:</p>
+                        <ul>
+                            <li>Cuota anual $ 2.880</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="suscriptor">
+                    <div class="row py-2 text-white">
+                        <p>Mujeres y hombres a partir de 12 años.</p>
+                        <ul>
+                            <li>Tendrán entrada libre a los partidos cuando el Club es locatario por campeonato Uruguayo
+                            </li>
+                            <li>Tendrán descuento y prioridad en entradas de Copa Libertadores</li>
+                            <li>luego de 3 años pasa a ser activo, siendo mayor a 18 años</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen con débito automático, el costo de la cuota será:</p>
+                        <ul>
+                            <li>Cuota mensual $ 560</li>
+                            <li>Cuota anual $ 6.720 (promo 15 meses)</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen en Redpagos, en la sede o a través del cobrador, la cuota
+                            será:</p>
+                        <ul>
+                            <li>Cuota anual $8.160</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-pane" id="interior">
+                    <div class="row py-2 text-white">
+                        <p>(Se requiere constancia de domicilio)</p>
+                        <p>De 12 años en adelante residentes en los departamentos de: Artigas, Cerro Largo, Colonia,
+                            Durazno, Flores, Paysandú, Rio Negro, Rivera, Rocha, Salto, Soriano, Tacuarembó y Treinta y
+                            Tres.</p>
+                        <ul>
+                            <li>Podrán acceder gratuitamente al Campeón del Siglo a un máximo de 7 partidos al año por
+                                el campeonato Uruguayo</li>
+                            <li>Para los restantes partidos del torneo local Tendrán una bonificación del 30% del precio
+                                de la entrada general</li>
+                            <li>Tendrán descuento y prioridad en entradas de Copa Libertadores</li>
+                            <li>luego de 10 años pasa a ser activo * (opcional), siendo mayor a 18 años.</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen con débito automático, el costo de la cuota será:</p>
+                        <ul>
+                            <li>Cuota mensual $ 330</li>
+                            <li>Cuota anual $ 3.960 (promo 15 meses)</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen en Redpagos, en la sede o a través del cobrador, la cuota
+                            será:</p>
+                        <ul>
+                            <li>Cuota anual $ 4.920</li>
+                        </ul>
+                        <p><span>*El cambio es opcional y debe ser manifestado expresamente por el socio ya que cambia
+                                el valor de la cuota; en año electoral debe solicitarse antes del 31 de octubre que es
+                                cuando cierra el padrón</span></p>
+                    </div>
+                </div>
+                <div class="tab-pane" id="activo">
+                    <div class="row py-2 text-white">
+                        <p>A partir de los 18 años (Previa antigüedad en la categoría Inscripta, Suscriptor o Coop. del
+                            Interior).</p>
+                        <ul>
+                            <li>Podrán formar parte de la Asamblea de Socios con voz y voto</li>
+                            <li>Tendrán derecho a elegir las autoridades del Club y formar parte de ellas</li>
+                            <li>Tendrán entrada libre a los partidos cuando el Club es locatario por campeonato Uruguayo
+                            </li>
+                            <li>Tendrán descuento y prioridad en entradas de Copa Libertadores</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen con débito automático, el costo de la cuota será:</p>
+                        <ul>
+                            <li>Cuota mensual $ 560</li>
+                            <li>Cuota anual $ 6.720 (promo 15 meses)</li>
+                        </ul>
+                        <p>Para aquellos socios que abonen en Redpagos, en la sede o a través del cobrador, la cuota
+                            será:</p>
+                        <ul>
+                            <li>Cuota anual $ $8.160</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Preguntas frecuentes -->
+        <section class="container pb-5">
+            <h2>Preguntas frecuentes</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button text-secondary bg-gray" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            ¿Cuáles son nuestras vías de contacto?
+                        </button>
+                    </h3>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>A través del mail: <a href="mailto:socioscapenarol.com.uy">socios@capenarol.com.uy</a>
+                                podrás gestionar todas tus consultas y solicitudes.
+                                También podrás chequear información las 24 horas a través del chat “Hola Peñarol” de
+                                nuestra página oficial o Messenger, o por el chat de WhatsApp 092891891.</p>
+                            <p>Las oficinas del Palacio Peñarol se encuentran cerradas hasta nuevo aviso.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button text-secondary bg-gray collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                            aria-controls="collapseTwo">
+                            ¿Cómo me hago socio?
+                        </button>
+                    </h3>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Podés asociarte de forma online a través de nuestra web <a
+                                    href="https://www.xn--pearol-xwa.org/Socios/Hacete-Socio-uc98">aquí</a>.</p>
+                            <p>También podés gestionarlo vía mail a socios@capenarol.com.uy o bien, realizarlo
+                                personalmente en la Sede.</p>
+                            <p>Aclaramos que para aquellos que ingresan en la categoría Cooperador del Interior deben
+                                presentar constancia de domicilio
+                                (únicamente para residentes de los departamentos de: Artigas, Cerro Largo, Colonia,
+                                Durazno, Flores, Paysandú, Río Negro, Rivera, Rocha,
+                                Salto, Soriano, Tacuarembó y Treinta y Tres)</p>
+                            <p>Con estos datos se realiza la afiliación al sistema, adjudicándole número de socio
+                                correspondiente a la categoría, función de la edad,
+                                zona de residencia y lo que opte.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button text-secondary bg-gray collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                            aria-controls="collapseThree">
+                            ¿Qué opciones hay para pagar la cuota?
+                        </button>
+                    </h3>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Para abonar las cuotas, podrá seleccionarse uno de los siguientes medios de pago:
+                                <strong>Débito por tarjeta de crédito</strong>
+                                (Oca, Visa, Master Card, Créditos Directos, Creditel, Cabal, Italcred, Pass Card),
+                                <strong>tarjeta de débito</strong> BROU, BBVA o Itaú;
+                                en los locales de Redpagos (solamente en forma anual) o a través del <strong>débito en
+                                    la factura de TCC </strong>(solamente en forma mensual).</p>
+                            <p>Informamos que aquellos socios que abonen sus cuotas mediante débito participarán de
+                                promociones especiales, así como también si optan por pagar
+                                la anualidad completa se verán beneficiados con tres meses adicionales sin costo,
+                                quedando con una vigencia de 15 meses en vez de 12.<br>
+                                *Con Master BBVA Peñarol obtenés un 10% de descuento adicional que lo verás reflejado en
+                                tu estado de cuenta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="accordion-button text-secondary bg-gray collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                            aria-controls="collapseFour">
+                            ¿Cómo obtengo la tarjeta CAP?
+                        </button>
+                    </h3>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p>Existen dos opciones:<br></p>
+                            <ul>
+                                <li>Se tramita y entrega en el momento en Palacio Peñarol de lunes a viernes de 10 a 18
+                                    hs con un costo de $320. </li>
+                                <li>En el caso que no puedas concurrir al Palacio, podés depositar $320 en la cuenta
+                                    “Peñarol Recupero” de Redpagos y enviarnos la foto y el ticket de pago por mail a
+                                    socios@capenarol.com.uy para que lo imprimamos y enviemos por correo </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="sponsor bg-primary py-5">
+            <div class="container m-auto">
+                <h4 class="text-center text-secondary fs-6 mb-5">Sponsors</h4>
+                <div class="row">
+                    <ul class="d-flex flex-wrap">
+                        <li><a href=""><img src="images/sponsors/bbva.webp" alt="bbva logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/renault.webp" alt="renault logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/puma.webp" alt="puma logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/antel.webp" alt="antel logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/cds.webp" alt="campeón del siglo logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/futboluy.webp" alt="futboluy logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/nativa.webp" alt="nativa logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/pilsen.webp" alt="pilsen logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/suat.webp" alt="suat logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/gatorade.webp" alt="gatorade logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/española.webp" alt="española logo"></a></li>
+                        <li><a href=""><img src="images/sponsors/nuñez.webp" alt="nuñez logo"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary pb-5">
+            <div class="container m-auto">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <img class="marca-penarol" src="images/marca.svg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="d-flex flex-wrap justify-content-center">
+                        <li class="px-1"><a class="fs-7" href=""><i class="fab fa-spotify "></i></a></li>
+                        <li class="px-1"><a class="fs-7" href=""><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="px-1"><a class="fs-7" href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="px-1"><a class="fs-7" href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="px-1"><a class="fs-7" href=""><i class="fab fa-youtube"></i></a></li>
+                        <li class="px-1"><a class="fs-7" href=""><i class="fab fa-whatsapp"></i></a></li>
+                        <li class="px-1"><a href="" class="fs-7 text-white">Política de privacidad</a></li>
+                        <li class="px-1"><a href="" class="fs-7 text-white">Términos de uso</a></li>
+                        <li class="px-1"><a href="" class="fs-7 text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <p class="fs-8 text-center text-white">Club Atlético Peñarol, fundado el 28 de setiembre de 1891. Cr
+                        Gastón Güelfi Tel: 2401 1891. Dirección Magallanes 1721. C.P.:11200.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+@mixin hero($background, $size, $position, $z-index, $height){
+    background: $background;
+    background-size: $size;
+    position: $position;
+    z-index: $z-index;
+    height: $height;
+}

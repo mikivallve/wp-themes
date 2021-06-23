@@ -1,0 +1,231 @@
+// Header
+.header-jobs p {
+    max-width: 780px;
+    font-size: 16px;
+    line-height: 28px;
+}
+.container-jobs {
+    height: 900px;
+    position: relative;
+    overflow: hidden;
+}
+.video {
+    max-width: unset;
+    z-index: 2;
+
+    iframe {
+        border-radius: 16px;
+    }
+}
+
+// Imgs header
+.box {
+    position: absolute;
+
+    img {
+        border-radius: 16px;
+    }
+} 
+.img-box1 {
+    top: 50%;
+    left: -11%;
+
+    img {
+        width: 100%;
+    }
+}
+.img-box2 {
+    top: 75%;
+    left: -28%;
+
+    img {
+        width: 60%;
+    }
+}
+.img-box3 {
+    top: 58%;
+    left: 42%;
+
+    img {
+        width: 75%;
+    }
+}
+.img-box4 {
+    top: 77%;
+    left: 53%;
+
+    img {
+        width: 95%;
+    }
+}
+
+// Jobs
+.jobs a:first-of-type{
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.nav-pills .nav-link {
+    background-color: $secondary;
+    font-size: 18px;
+    color: $font-color;
+    border-radius: 28px;
+    box-shadow: $box-shadow-sm;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 16px 32px;
+
+    &:hover {
+        color: $primary;
+        box-shadow: $box-shadow;
+    }
+}
+.filters .nav-pills .active:hover {
+    color: $secondary;
+}
+
+.filters > ul > li:last-child > button {
+    margin-right: 0;
+}
+.filters .card {
+
+    h4 {
+    font-family: $primary-font;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+.filters .tab-content {
+
+    a { 
+    color: unset;
+
+        &:hover {
+            border-radius: 16px;
+            text-decoration: none;
+            box-shadow: $box-shadow;
+        }
+    }
+    .card {
+        border: none;
+        border-radius: 16px;
+        box-shadow: $box-shadow-sm;
+
+        .card-body {
+
+            p {
+            margin-bottom: 7px;
+            line-height: 0;
+            }
+            svg {
+                color: $primary;
+            }
+        }
+    }
+}
+.perks {
+    background-color: $bg-lila;
+
+    svg, p {
+        color: $secondary;
+    }
+} 
+// Media queries
+@include media-breakpoint-up(md) {
+    // Header
+    .video {
+        max-width: 80%;
+    }
+    .container-jobs {
+        height: 1230px;
+    }
+    // Imgs header
+    .img-box1 {
+        top: 48%;
+        left: -21%;
+
+        img {
+            width: 55%;
+        }
+    }
+    .img-box2 {
+        top: 73%;
+        left: -26%;
+
+        img {
+            width: 26%;
+        }
+    }
+    .img-box3 {
+        top: 61%;
+        left: 28%;
+
+        img {
+            width: 38%;
+        }
+    }
+    .img-box4 {
+        top: 79%;
+        left: 24%;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+@include media-breakpoint-up(lg) {
+    // Header
+    .header-jobs {
+
+        h1 {
+            font-size: 50px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 38px;
+        }
+    }
+    .container-jobs {
+        height: unset;
+    }
+    // Imgs header
+    .img-box1 {
+        top: 32%;
+        left: -34%;
+
+        img {
+            width: 30%;
+        }
+    }
+    .img-box2 {
+        top: 82%;
+        left: -28%;
+
+        img {
+            width: 14%;
+        }
+    }
+    .img-box3 {
+        top: 36%;
+        left: 32%;
+
+        img {
+            width: 20%;
+        }
+    }
+    .img-box4 {
+        top: 72%;
+        left: 31%;
+
+        img {
+            width: 28%;
+        }
+    }
+}

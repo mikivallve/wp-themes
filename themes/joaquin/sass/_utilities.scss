@@ -1,0 +1,32 @@
+//Font size
+.fs-7{
+    font-size: $spacer - $spacer/4;
+}
+.fs-8{
+    font-size: $spacer - $spacer/3;
+}
+
+//Background images properties
+.object-fit-cover{
+    object-fit: cover;
+}
+
+//Width
+.w-33{
+    width: 33%;
+}
+
+//Opacity
+@for $i from 1 to 6
+{
+  .opacity-#{$i}0 
+  {
+    opacity: 10%*$i;
+  }
+}
+
+//Colors
+.bg-gray{
+  background: #3f3f3f;
+}
+

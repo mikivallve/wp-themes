@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/a6bec1c4ef2d2fd1bac5a6951f5f32a3?family=American+Captain" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/controlador.min.css">
+    <link rel="stylesheet" href="assets/font/bootstrap-icons.css">
+    <script src="assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/myjs.js"></script>
+
+    <title>Mi Cuenta</title>
+</head>
+<body class="text-white">
+
+
+        <!--Header-->
+  <header class="header bg-danger mb-5">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid container-xl">
+        <a class="navbar-brand me-5" href="index.html">
+            <img src="assets/img/logo-2.png" alt="CUARQ">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mb-2 mb-lg-0 m-auto">
+            <li class="nav-item">
+              <a class="nav-link px-4"  href="torneos.html">Torneos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#">Cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#">El Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-4" href="#">Novedades</a>
+            </li>
+          </ul>
+            <a class="nav-link px-4 active" href="mi-cuenta.html">Mi Cuenta</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <!--/Header-->
+   
+<!--Form-->
+<div class="custom-container">
+    <div>
+            <div class="img-container text-center mb-3">
+                <img style="width: 50px;" src="assets/img/logo cuarq.svg" alt="CUARQ logo">
+            </div>
+            <h6 class="text-uppercase">Inicia sesión con tu mail</h6>
+        <form class="pb-3">
+            <div class="mb-3">
+              <input type="email" class="form-control" id="email" name="email" inputmode="text" placeholder="Email" autocomplete="username" aria-describedby="emailHelp" aria-label="Dirección de correo electrónico" autocorrect="off" autocapitalize="none" spellcheck="false">
+            </div>
+            <div class="mb-3">
+              <input type="password" class="form-control" id="password" name="password" inputmode="text" placeholder='Contraseña' autocomplete="current-password" aria-label="Contraseña">
+            </div>
+            <div class="d-flex justify-content-between aign-items-center flex-wrap">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                  <label class="form-check-label" for="remember">Recordarme</label>
+                </div>
+                <a href="#" aria-label="¿Has olvidado tu contraseña?">
+                    <p class="mb-3 ms-1">¿Has olvidado tu contraseña?</p>
+                </a>
+            </div>
+            <button type="submit" class="btn btn-large btn-primary py-2 text-uppercase fw-bold">iniciar sesión</button>
+          </form>
+                <a href="#">
+                    <p class="text-center">Política de privacidad</p>
+                </a>
+        <div class="d-flex justify-content-center aign-items-center">
+            <p class="px-1">¿No tienes cuenta?</p>
+            <a href="#" class="px-1">
+                <p>Regístrate</p>
+            </a>
+        </div>
+    </div>
+</div>
+<!--/Form-->
+
+</body>
+</html>

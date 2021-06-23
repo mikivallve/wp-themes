@@ -1,0 +1,31 @@
+/*!
+Theme Name: Maria Eugenia
+Theme URI: ----
+Author: Maria Eugenia
+Author URI: ----
+Description: Tema para usar en tu entrega
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Maria Eugenia
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+*/
+@import 'variables';
+@import 'main';
+@import 'buttons';
+@import 'navbar';
+@import 'banner';
+@import 'cards';
+@import 'section2';
+@import 'carousel';
+@import 'accordion';
+@import 'form';
+@import 'footer';
+@import 'calendar';
+@import 'extends';
+@import 'horizontal-scroll';
+@import '../../css/bootstrap-icons.css';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

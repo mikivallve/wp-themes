@@ -1,0 +1,24 @@
+//
+// Base styles
+//
+
+.accordion-button {
+    background-color: $bg-gray;
+    &:not(.collapsed) {
+      background-color: $bg-gray;  
+    }    
+}
+  
+  .accordion-item {
+    background-color: $bg-gray;
+    border: $accordion-border-width solid $secondary; 
+    .accordion-body{
+        color: #fff;
+        font-size: 14px;
+        a{
+            color: $secondary;
+        }
+    }
+  }
+
+

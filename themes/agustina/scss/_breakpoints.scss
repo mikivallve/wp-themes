@@ -1,0 +1,17 @@
+/*BREAKPOINTS*/
+
+@media (max-width: 576px) {
+    .upcoming-events{
+        background-image: url(../img/upcoming-events-sm-bg.jpg);
+        background-size: contain;
+    }
+    h2{
+        font-size:2rem !important;
+    }
+    .footer{
+        background-image: url(../img/footer-sm-bg.jpg);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

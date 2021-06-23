@@ -1,0 +1,10 @@
+.table{
+    td{
+        padding: .25rem;
+        border: none;
+    }
+    th{
+        padding: .25rem;
+        border-top: 1px solid $primary;
+    }
+}

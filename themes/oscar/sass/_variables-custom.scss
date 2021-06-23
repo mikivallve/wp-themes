@@ -1,0 +1,77 @@
+// Colores
+$primary: rgb(237, 74, 90);
+$secondary: hsl(354, 82%, 85%);
+$success: #198754;
+$info: rgb(6, 73, 249);
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #f3ece2;
+$gray: #6c757d;
+$dark: #212529;
+$card-cap-bg: rgba(#f3ece2, 0.3);
+$build-color: hsl(182, 85%, 33%);
+$analyze-color: #9013fe;
+$connect-color: #32b92d;
+$target-color: rgb(246, 117, 192);
+$design-color: orange;
+$navbar-light-active-color: $primary;
+$navbar-light-brand-color: rgba(0, 0, 0, 0.9);
+$link-color: rgba(0, 0, 0, 0.8);
+
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'e-light': $card-cap-bg,
+    'dark': $dark,
+    'gray': $gray,
+    'build': $build-color,
+    'analyze': $analyze-color,
+    'connect': $connect-color,
+    'target': $target-color,
+    'design': $design-color,
+);
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+$container-max-widths: (
+    sm: 576px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+);
+
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer / 4,
+    2: $spacer / 2,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 3.5,
+    7: $spacer * 4,
+    8: $spacer * 4.5,
+    9: $spacer * 5,
+    10: $spacer * 5.5,
+    11: $spacer * 6,
+    12: $spacer * 6.5,
+    13: $spacer * 7,
+    14: $spacer * 7.5,
+    15: $spacer * 8,
+    16: $spacer * 8.5,
+);
+$card-spacer-y: $spacer / 2;
+$card-spacer-x: $spacer / 2;
+$card-cap-padding-y: $spacer / 4;
+$card-cap-padding-x: $spacer / 2;

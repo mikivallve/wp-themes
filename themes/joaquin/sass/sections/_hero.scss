@@ -1,0 +1,8 @@
+.hero{
+    &--img{
+        @include hero(url(../images/hero.jpg) center no-repeat, cover, relative, 2, 60vh);      
+    }
+    &--small{
+        @include hero($secondary, unset, relative, unset, 30vh);
+    }
+}

@@ -1,0 +1,145 @@
+/*GENERAL*/
+html{
+    scroll-behavior: smooth;
+}
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+.logo{
+    width:160px;
+}
+.hero-image{
+    height: 80vh;
+    width: 100%;
+}
+
+.hero-image img, .latest-releases .row article img, .section-sven img{
+    @include inside-image;
+}
+
+.slider-index{
+    position: relative;
+    background-image: url(../img/cocoon-party.jpeg);
+    background-size: cover;
+    background-position: bottom;
+}
+/*SVEN PAGE*/
+
+.slider-sven{
+    position: relative;
+    background-image: url(../img/slidersven-plain.jpg);
+    background-position: bottom;
+}
+
+.hero-title{
+    font-size:10vh;
+    position: absolute;
+    bottom: $spacer*3;
+    left: $spacer*3;
+    line-height: $spacer*4;
+}
+
+.latest-releases .row article{
+    height: 400px;
+}
+
+.latest-releases h2{
+    margin-bottom: 0;
+}
+
+.upcoming-events{
+    background-image: url(../img/upcoming-bg.png);
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-sven, .section-cocoon, .section-cocoon img{
+    height: 600px;
+}
+
+.section-cocoon{
+    background-color: $gray;
+}
+
+.related-artists{
+    height:50vh;
+}
+
+.navbar-fixed-top.scrolled{
+    background-color: $dark !important;
+    transition: background-color 200ms ease-in;
+    box-shadow: 5px -1px 12px -5px $secondary;
+  }
+
+/*EVENTS*/
+
+.slider-events{
+    position: relative;
+    background-image: url(../img/slider-events.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+
+
+.events{
+    height:40vh;
+}img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: $white;
+    border-radius: 0;
+    color: $dark;
+    font-weight: bold;
+    border-bottom: 2px solid $dark;
+}
+
+.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link{
+    padding-left:2.5rem;
+}
+        
+
+/*FOOTER*/
+
+footer{
+    background-image: url(../img/footer-bg-02.jpg);
+    background-position: left;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+footer figure img{
+    width:300px;
+    height: auto;
+}
+
+ul li a{
+    color:$secondary;
+    text-decoration: none;
+    &:hover{
+        font-weight: bold;
+        color: $light;
+    }
+}
+
+/*CONTACT US!*/
+
+input[type="text"], #message{
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $gray;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+input[type="text"]:focus, #message:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 3px solid $dark;
+}

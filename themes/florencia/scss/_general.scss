@@ -1,0 +1,173 @@
+// General
+body {
+    font-family: $primary-font;
+}
+h1 {
+    color: $secondary;
+    font-family: $Kanit;
+    font-weight: 800;
+    font-size: 35px;
+    text-transform: uppercase;
+}
+h2, h3 {
+    font-family: $Kanit;
+    color: $font-color;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+h4 {
+    font-family: $Kanit;
+    font-size: 28px;
+    font-weight: 700;
+}
+p {
+    color: $font-color;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.padding {
+    @extend .py-5;
+    @extend .py-md-6; 
+    @extend .py-lg-7;
+}
+.bg-light-color {
+    background-color: $bg-light;
+}
+// Nav
+.navbar .container {
+    justify-content: unset;
+}
+.navbar-dark .navbar-toggler {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+.navbar-brand {
+    margin-right: 0;
+    color: $secondary;
+    flex-grow: 4;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: $secondary;
+    font-family: $primary-font;
+    font-weight: 600;
+
+    &:hover {
+        text-decoration: underline;
+        color: $secondary;
+    }
+}
+.login-sm {
+    display: flex;
+}
+.login-lg {
+    display: none; 
+}
+// Buttons
+.btn {
+    font-family: $Kanit;
+    font-weight: 500;
+    border-radius: 16px;
+
+    &:hover {
+        box-shadow: $box-shadow;
+    }
+}
+.btn-primary {
+    border: none;
+
+    &:hover {
+        background-color: $light-primarybtn;
+    }
+}
+.btn-secondary {
+    color: $font-color;
+
+    &:hover {
+        color: $primary;
+    }
+}
+.btn-terciary {
+    color: $secondary;
+    background-color: $font-color;
+
+    &:hover {
+        color: $secondary;
+        background-color: $light-terciarybtn;
+    }
+}
+.primary-btn-appstore-lg {
+    display: none;
+}
+// Header
+header {
+    background-color: $primary;
+
+    p {
+        color: $secondary;
+        font-size: 18px;
+        line-height: 38px;
+    }
+}
+
+.sparkles {
+    background-image: url(../assets/illustrations/sparkles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// Media queries
+
+@include media-breakpoint-up(md) {
+    .sparkles {
+        background-size: unset;
+    }
+}
+@include media-breakpoint-up(lg) {
+    .navbar .container {
+        justify-content: space-between;
+    }
+    .navbar-brand {
+        flex-grow: unset;
+    }
+    .login-sm {
+        display: none;
+    }
+    .login-lg {
+        display: flex; 
+    }
+    h2 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    // Home last big section
+    .reliable-tech {
+        max-width: 800px;
+    }
+    .primary-btn-appstore-md {
+        display: none;
+    }
+    .primary-btn-appstore-lg {
+        display: flex;
+        justify-content: center;
+    }
+}

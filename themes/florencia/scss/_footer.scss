@@ -1,0 +1,45 @@
+footer {
+    background-color: $font-color;
+
+    h3 {
+        color: $primary;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    h5 {
+        color: $primary;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+    }
+}
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    max-width: 200px;
+
+    a {
+        color: $secondary;
+    }
+}
+footer nav {
+    flex-wrap: wrap;
+
+    a {
+        color: $secondary;
+        text-decoration: none;
+    
+        &:hover {
+            color: $secondary;
+            text-decoration: underline;
+        }
+    }
+}
+footer .sign-up {
+    border-top: 1px solid $primary;
+
+    svg {
+        color: $secondary;
+    }
+}

@@ -1,0 +1,49 @@
+//Colors
+$primary: #5865f2;
+$secondary: #ffffff;
+$home-background: #404eed;
+$font-color: #23272a;
+$light-primarybtn: lighten($primary, 5%);
+$light-terciarybtn: lighten($font-color, 10%);
+$bg-light: #f6f6f6;
+$bg-lila: #8ea1e1;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700;800;900&family=Open+Sans:wght@400;600;700;800&display=swap');
+$Kanit: 'Kanit', sans-serif;
+$primary-font: 'Open Sans', sans-serif;
+
+// Spacers
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer / 4,
+    2: $spacer / 2,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 8,
+);
+
+// Icon navbar
+$navbar-dark-color: rgba($secondary, 1);
+
+// Container
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    // xxl: 1140px
+);
+
+// Breakpoints
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    //   xxl: 1400px
+);

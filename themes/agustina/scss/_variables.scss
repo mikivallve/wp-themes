@@ -1,0 +1,26 @@
+$dark: #000;
+$light: #F6F6F6;
+$secondary: #979797;
+$gray: #202020;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer / 4,
+  2: $spacer / 2,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 10,
+  8: $spacer * 14,
+  9: $spacer * 16,
+) !default;
+
+@mixin inside-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+

@@ -1,0 +1,77 @@
+$white: #fff;
+$black: #000;
+
+$primary: #6c882e;
+$secondary: #212529;
+//$secondary: #202020;
+
+$body-bg-color: #1d2024;
+//$body-bg-color: #1d2024;
+$body-color: $white !important;
+
+$nav-link-color: $white;
+$navbar-dark-active-color: $primary !important;
+
+$btn-link-color: $primary;
+$btn-link-hover-color: $secondary;
+
+//Utilities
+
+//Spacer
+$spacer: 2rem;
+$spacers: (
+    0: 0,
+    1: $spacer / 4,
+    2: $spacer / 2,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 9,
+);
+
+$navbar-padding-y: $spacer / 4 !important;
+$card-spacer-y: $spacer;
+$card-spacer-x: $spacer;
+
+//Max widths
+$container-max-widths: (
+    xl: 1280px,
+    xxl: 1440px,
+);
+
+$utilities: (
+    'opacity': (
+        property: opacity,
+        class: o,
+        values: (
+            0: 0,
+            25: 0.25,
+            50: 0.5,
+            75: 0.75,
+            95: 0.95,
+            100: 1,
+        ),
+    ),
+    'viewport-height': (
+        property: height,
+        class: vh,
+        values: (
+            25: 25vh,
+            30: 30vh,
+            40: 40vh,
+            50: 50vh,
+            75: 75vh,
+            100: 100vh,
+        ),
+    ),
+    'line-height': (
+        property: line-height,
+        class: lh,
+        values: (
+            1: 1,
+            2: 2,
+            3: 3,
+        ),
+    ),
+);
