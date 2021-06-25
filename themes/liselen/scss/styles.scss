@@ -1,5 +1,5 @@
 /*!
-Theme Name: Liselen
+Theme Name: Liselen....
 Theme URI: ----
 Author: Liselen
 Author URI: ----
@@ -95,5 +95,32 @@ h2 {
     &:hover {
         font-weight: 700;
         color: $color-2;
+    }
+}
+
+/* Tocado video */
+
+.home {
+    .submenu-home {
+        li {
+            @extend .card;
+            @extend .mb-4;
+            @extend .d-table;
+            img {
+                @extend .imgCard;
+            }
+            > div {
+                @extend .d-table-cell;
+            }
+            > a {
+                @extend .d-inline-block;
+                @extend .ps-4;
+            }
+        }
+    }
+
+    .formulario-contacto {
+        @extend .m-auto;
+        width: fit-content;
     }
 }

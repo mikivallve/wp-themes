@@ -55,11 +55,23 @@
 			</div>
 		</form>
 
-		<ul class="col-12 col-md-2 navbar-nav pb-4">
-			<li><a href="index.html">HOME</a></li>
-			<li><a href="svenvath.html">SVEN VATH</a></li>
-			<li><a href="events.html">EVENTS</a></li>
-		</ul>
+		<!-- Menu goes here -->
+		<?php
+		wp_nav_menu(
+			array(
+				'theme_location'  => 'footer_menu',
+				'container_class' => 'col-12 col-md-2 navbar-nav pb-4',
+				'container_id'    => '',
+				'menu_class'      => '',
+				'fallback_cb'     => '',
+				'menu_id'         => 'menu_footer',
+				'depth'           => 2,
+				'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+			)
+		);
+		?>
+
+
 
 
 	</div>

@@ -48,3 +48,12 @@ img {
         url('//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.ttf') format('truetype'),
         url('//db.onlinewebfonts.com/t/a6bec1c4ef2d2fd1bac5a6951f5f32a3.svg#American Captain') format('svg');
 }
+
+.home {
+    .noticias-home {
+        @extend .container;
+        img {
+            width: 100%;
+        }
+    }
+}

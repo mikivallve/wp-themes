@@ -35,6 +35,10 @@
 	<!-- absoluto para superar neuronas animadas y crear animacion mobil de menu -->
 	<header id="header" class="position-absolute top-0 w-100 pt-3"></header>
 
+	<!-- esto se posiciona por sobre todo para poder interactuar con el, 
+        en consecunecia como hay menu botones etc en esta area, estos deben
+        SUPERAR este elemento por lo que hay otros elementos posicionados (header(nav) y boton por ahora) -->
+	<div id="particles-js"></div>
 
 	<main>
 		<!-- cierra en footer.php -->

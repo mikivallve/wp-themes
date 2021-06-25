@@ -23,3 +23,15 @@ if (!function_exists('maria_post_thumbnails')) {
 	}
 }
 add_action('after_setup_theme', 'maria_post_thumbnails');
+
+
+/* Change Text Site Wide */
+
+function maria_change_text($translated_text)
+{
+	if ($translated_text == 'Username or Email Address') {
+		$translated_text = 'INICIA SESIÓN CON TU MAIL';
+	}
+	return $translated_text;
+}
+add_filter('gettext', 'maria_change_text', 20);

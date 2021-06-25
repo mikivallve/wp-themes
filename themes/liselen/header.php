@@ -6,6 +6,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title><?php wp_title('|', true, 'right'); ?></title>
 	<link rel="stylesheet" href="<?php echo esc_url(get_stylesheet_uri()); ?>" type="text/css" />
+
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/brainstormforce/ultimate-addons-for-gutenberg/master/dist/style-blocks.css">
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/brainstormforce/ultimate-addons-for-gutenberg/master/dist/blocks.style.css">
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/brainstormforce/ultimate-addons-for-gutenberg/master/dist/blocks.css">
+
 	<?php wp_head(); ?>
 </head>
 

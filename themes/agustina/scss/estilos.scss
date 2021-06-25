@@ -1,98 +1,103 @@
 /*GENERAL*/
-html{
+html {
     scroll-behavior: smooth;
 }
-.container-fluid{
+.container-fluid {
     padding-left: 0;
     padding-right: 0;
 }
-.logo{
-    width:160px;
+.logo {
+    width: 160px;
 }
-.hero-image{
+.hero-image {
     height: 80vh;
     width: 100%;
 }
 
-.hero-image img, .latest-releases .row article img, .section-sven img{
+.hero-image img,
+.latest-releases .row article img,
+.section-sven img {
     @include inside-image;
 }
 
-.slider-index{
+.slider-index {
     position: relative;
-    background-image: url(../img/cocoon-party.jpeg);
+    background-image: url(/wp-content/themes/agustina/img/cocoon-party);
     background-size: cover;
     background-position: bottom;
 }
 /*SVEN PAGE*/
 
-.slider-sven{
+.slider-sven {
     position: relative;
     background-image: url(../img/slidersven-plain.jpg);
     background-position: bottom;
 }
 
-.hero-title{
-    font-size:10vh;
+.hero-title {
+    font-size: 10vh;
     position: absolute;
-    bottom: $spacer*3;
-    left: $spacer*3;
-    line-height: $spacer*4;
+    bottom: $spacer * 3;
+    left: $spacer * 3;
+    line-height: $spacer * 4;
+    width: min-content;
 }
 
-.latest-releases .row article{
+.latest-releases .row article {
     height: 400px;
 }
 
-.latest-releases h2{
+.latest-releases h2 {
     margin-bottom: 0;
 }
 
-.upcoming-events{
+.upcoming-events {
     background-image: url(../img/upcoming-bg.png);
-    background-position:bottom;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.section-sven, .section-cocoon, .section-cocoon img{
+.section-sven,
+.section-cocoon,
+.section-cocoon img {
     height: 600px;
 }
 
-.section-cocoon{
+.section-cocoon {
     background-color: $gray;
 }
 
-.related-artists{
-    height:50vh;
+.related-artists {
+    height: 50vh;
 }
 
-.navbar-fixed-top.scrolled{
+.navbar-fixed-top.scrolled {
     background-color: $dark !important;
     transition: background-color 200ms ease-in;
     box-shadow: 5px -1px 12px -5px $secondary;
-  }
+}
 
 /*EVENTS*/
 
-.slider-events{
+.slider-events {
     position: relative;
     background-image: url(../img/slider-events.jpg);
     background-size: cover;
     background-position: bottom;
 }
 
-
-
-.events{
-    height:40vh;
-}img{
+.events {
+    height: 40vh;
+}
+img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
     background-color: $white;
     border-radius: 0;
     color: $dark;
@@ -100,28 +105,29 @@ html{
     border-bottom: 2px solid $dark;
 }
 
-.navbar-dark .navbar-nav .show>.nav-link, .navbar-dark .navbar-nav .nav-link{
-    padding-left:2.5rem;
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link {
+    padding-left: 2.5rem;
 }
-        
 
 /*FOOTER*/
 
-footer{
+footer {
     background-image: url(../img/footer-bg-02.jpg);
     background-position: left;
     background-size: contain;
     background-repeat: no-repeat;
 }
-footer figure img{
-    width:300px;
+footer figure img {
+    width: 300px;
     height: auto;
 }
 
-ul li a{
-    color:$secondary;
+.navbar-nav ul li a.nav-link {
+    color: $secondary;
     text-decoration: none;
-    &:hover{
+    text-transform: uppercase;
+    &:hover {
         font-weight: bold;
         color: $light;
     }
@@ -129,17 +135,19 @@ ul li a{
 
 /*CONTACT US!*/
 
-input[type="text"], #message{
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid $gray;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-radius: 0;
+input[type='text'],
+#message {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid $gray;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
 }
 
-input[type="text"]:focus, #message:focus {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border-bottom: 3px solid $dark;
+input[type='text']:focus,
+#message:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 3px solid $dark;
 }

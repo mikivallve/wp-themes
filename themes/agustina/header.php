@@ -17,8 +17,8 @@
 		<!--NAV BAR-->
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-fixed-top">
 			<div class="container-fluid">
-				<a class="navbar-brand ps-4" href="index.html">
-					<img src="img/cocoon-logo-02.png" alt="logo de cocoon" class="logo m-2">
+				<a class="navbar-brand ps-4" href="/">
+					<img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/img/cocoon-logo-02.png" alt="logo de cocoon" class="logo m-2">
 				</a>
 				<button class="navbar-toggler border-0 me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>

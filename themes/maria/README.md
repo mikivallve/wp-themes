@@ -9,7 +9,7 @@ npm i
 
 Para compilar sass en el lugar correcto la terminal debe estar en la carpeta /maria y correr el siguiente comando
 ```
-sass --watch sass/styles.scss:style.css --style compressed 
+sass --watch assets/scss/styles.scss:style.css --style compressed 
 ```
 
 ## Archivos

@@ -217,3 +217,12 @@ body {
 //     height: 50px;
 //     background-color:cadetblue;
 // }
+
+.esconde-ico {
+    .eael-pricing-item {
+        padding-top: 0 !important;
+    }
+    .eael-pricing-icon {
+        display: none !important;
+    }
+}
