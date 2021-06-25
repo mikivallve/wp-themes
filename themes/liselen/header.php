@@ -9,7 +9,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('class-name'); ?>>
 	<!-- Header -->
 	<header>
 		<nav class="navbar navbar-expand-lg navbar-light">

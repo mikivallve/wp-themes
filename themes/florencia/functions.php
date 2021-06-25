@@ -15,3 +15,11 @@ if (!function_exists('florencia_register_nav_menu')) {
 	}
 	add_action('after_setup_theme', 'florencia_register_nav_menu', 0);
 }
+
+if (!function_exists('florencia_post_thumbnails')) {
+	function florencia_post_thumbnails()
+	{
+		add_theme_support('post-thumbnails');
+	}
+}
+add_action('after_setup_theme', 'florencia_post_thumbnails');

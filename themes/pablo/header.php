@@ -29,7 +29,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('class-name'); ?>>
 
 	<!-- en conjunto con el nav se pone show, me prendo de el para hablarle al header -->
 	<input type="hidden" id="navbarNav">

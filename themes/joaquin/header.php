@@ -13,7 +13,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('class-name'); ?>>
 	<header>
 		<nav class="navbar bg-secondary">
 			<div class="container m-auto">

@@ -16,3 +16,11 @@ if (!function_exists('oscar_register_nav_menu')) {
 	}
 	add_action('after_setup_theme', 'oscar_register_nav_menu', 0);
 }
+
+if (!function_exists('oscar_post_thumbnails')) {
+	function oscar_post_thumbnails()
+	{
+		add_theme_support('post-thumbnails');
+	}
+}
+add_action('after_setup_theme', 'oscar_post_thumbnails');

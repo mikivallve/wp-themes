@@ -14,3 +14,11 @@ if (!function_exists('agustina_register_nav_menu')) {
 	}
 	add_action('after_setup_theme', 'agustina_register_nav_menu', 0);
 }
+
+if (!function_exists('pablo_post_thumbnails')) {
+	function pablo_post_thumbnails()
+	{
+		add_theme_support('post-thumbnails');
+	}
+}
+add_action('after_setup_theme', 'pablo_post_thumbnails');

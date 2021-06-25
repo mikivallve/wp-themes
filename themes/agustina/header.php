@@ -12,7 +12,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('class-name'); ?>>
 	<main>
 		<!--NAV BAR-->
 		<nav class="navbar navbar-expand-lg fixed-top navbar-dark navbar-fixed-top">

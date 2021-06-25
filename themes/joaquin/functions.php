@@ -15,3 +15,11 @@ if (!function_exists('joaquin_register_nav_menu')) {
 	}
 	add_action('after_setup_theme', 'joaquin_register_nav_menu', 0);
 }
+
+if (!function_exists('joaquin_post_thumbnails')) {
+	function joaquin_post_thumbnails()
+	{
+		add_theme_support('post-thumbnails');
+	}
+}
+add_action('after_setup_theme', 'joaquin_post_thumbnails');

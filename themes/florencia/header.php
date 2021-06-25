@@ -10,7 +10,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('class-name'); ?>>
 	<!-- Header -->
 	<header class="header-home">
 		<nav class="navbar navbar-expand-lg navbar-dark">

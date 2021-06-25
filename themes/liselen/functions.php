@@ -15,3 +15,11 @@ if (!function_exists('liselen_register_nav_menu')) {
 	}
 	add_action('after_setup_theme', 'liselen_register_nav_menu', 0);
 }
+
+if (!function_exists('liselen_post_thumbnails')) {
+	function liselen_post_thumbnails()
+	{
+		add_theme_support('post-thumbnails');
+	}
+}
+add_action('after_setup_theme', 'liselen_post_thumbnails');

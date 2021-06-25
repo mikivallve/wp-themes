@@ -14,7 +14,7 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('class-name'); ?>>
 	<!-- Header -->
 	<header class="sticky-top">
 		<div class="nav-container bg-light">
