@@ -1,10 +1,10 @@
 .header-home {
     background-color: $home-background;
-    background-image: url(../assets/illustrations/mobile-header-home-background.svg);
+    background-image: url(/wp-content/themes/florencia/assets/illustrations/mobile-header-home-background.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 626px;
+    // min-height: 626px;
 
     .header-btns {
         display: none;
@@ -22,7 +22,7 @@
 // Media queries
 @include media-breakpoint-up(md) {
     .header-home {
-        background-image: url(../assets/illustrations/header-home-background.svg);
+        background-image: url(/wp-content/themes/florencia/assets/illustrations/header-home-background.svg);
         background-position: 66%;
     }
     .header-blurb {

@@ -9,7 +9,8 @@ h1 {
     font-size: 35px;
     text-transform: uppercase;
 }
-h2, h3 {
+h2,
+h3 {
     font-family: $Kanit;
     color: $font-color;
 }
@@ -34,7 +35,7 @@ p {
 
 .padding {
     @extend .py-5;
-    @extend .py-md-6; 
+    @extend .py-md-6;
     @extend .py-lg-7;
 }
 .bg-light-color {
@@ -75,7 +76,7 @@ p {
     display: flex;
 }
 .login-lg {
-    display: none; 
+    display: none;
 }
 // Buttons
 .btn {
@@ -123,9 +124,20 @@ header {
         line-height: 38px;
     }
 }
+.navbar-dark .navbar-nav {
+    .nav-btn a {
+        @extend .btn;
+        @extend .btn-secondary;
+        @extend .px-3;
+        color: $dark;
+    }
+    &#right-menu .nav-btn a {
+        @extend .login-lg;
+    }
+}
 
 .sparkles {
-    background-image: url(../assets/illustrations/sparkles.svg);
+    background-image: url(/wp-content/themes/florencia/assets/illustrations/sparkles.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -149,7 +161,7 @@ header {
         display: none;
     }
     .login-lg {
-        display: flex; 
+        display: flex;
     }
     h2 {
         font-size: 40px;

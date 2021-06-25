@@ -12,7 +12,7 @@
 
 <body <?php body_class('class-name'); ?>>
 	<!-- Header -->
-	<header class="header-home">
+	<header>
 		<nav class="navbar navbar-expand-lg navbar-dark">
 			<div class="container pt-2">
 				<a class="navbar-brand" href="index.html">
@@ -30,7 +30,21 @@
 						</g>
 					</svg>
 				</a>
-				<a class="btn btn-secondary px-3 me-4 login-sm" href="#" role="button">Login</a>
+				<!-- Right Menu goes here -->
+				<?php
+				wp_nav_menu(
+					array(
+						'theme_location'  => 'primary_right',
+						'container_class' => 'px-3 me-4 login-sm',
+						'container_id'    => 'navbarNavDropdown',
+						'menu_class'      => 'navbar-nav m-auto',
+						'fallback_cb'     => '',
+						'menu_id'         => 'mobile-visible-menu',
+						'depth'           => 2,
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+					)
+				);
+				?>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -40,7 +54,7 @@
 					wp_nav_menu(
 						array(
 							'theme_location'  => 'primary',
-							'container_class' => '',
+							'container_class' => 'navbar-nav m-auto',
 							'container_id'    => 'navbarNavDropdown',
 							'menu_class'      => 'navbar-nav m-auto',
 							'fallback_cb'     => '',
@@ -50,35 +64,22 @@
 						)
 					);
 					?>
-					<a class="btn btn-secondary px-3 login-lg" href="#" role="button">Login</a>
+					<!-- Right Menu goes here -->
+					<?php
+					wp_nav_menu(
+						array(
+							'theme_location'  => 'primary_right',
+							'container_class' => '',
+							'container_id'    => 'navbarNavDropdown',
+							'menu_class'      => 'navbar-nav m-auto',
+							'fallback_cb'     => '',
+							'menu_id'         => 'right-menu',
+							'depth'           => 2,
+							'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+						)
+					);
+					?>
 				</div>
 			</div>
 		</nav>
-		<div class="container text-lg-center mt-5 mt-lg-7 header-blurb">
-			<h1>Imagine a place...</h1>
-			<p class="mt-4">...where you can belong to a school club, a gaming group, or a worldwide art
-				community. Where just you and handful of friends can spend time together. A
-				place that makes it easy to talk every day and hang out more often.</p>
-			<a class="btn btn-secondary btn-appstore px-4 py-3" href="#" role="button">
-				<svg width="24" height="24" viewBox="0 0 24 24">
-					<g fill="currentColor">
-						<path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
-						<path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path>
-					</g>
-				</svg>
-				Download on the App Store
-			</a>
-			<div class="mt-4 header-btns">
-				<a class="btn btn-secondary px-5 py-3" href="#" role="button">
-					<svg width="24" height="24" viewBox="0 0 24 24">
-						<g fill="currentColor">
-							<path d="M17.707 10.708L16.293 9.29398L13 12.587V2.00098H11V12.587L7.70697 9.29398L6.29297 10.708L12 16.415L17.707 10.708Z"></path>
-							<path d="M18 18.001V20.001H6V18.001H4V20.001C4 21.103 4.897 22.001 6 22.001H18C19.104 22.001 20 21.103 20 20.001V18.001H18Z"></path>
-						</g>
-					</svg>
-					Download for Mac
-				</a>
-				<a class="btn btn-terciary px-5 py-3" href="#" role="button">Open Discord in your browser</a>
-			</div>
-		</div>
 	</header>
