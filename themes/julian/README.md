@@ -7,9 +7,9 @@ Misma estructura que el obligatorio 1 con un cambio en el sass compilado
 npm i 
 ```
 
-Para compilar sass en el lugar correcto la terminal debe estar en la carpeta /maria y correr el siguiente comando
+Para compilar sass en el lugar correcto la terminal debe estar en la carpeta /julian y correr el siguiente comando
 ```
-sass --watch assets/scss/styles.scss:style.css --style compressed 
+sass --watch sass/styles.scss:style.css --style compressed 
 ```
 
 ## Archivos
