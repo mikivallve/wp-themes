@@ -4,16 +4,26 @@
 <footer>
 	<div class="row container m-auto py-4">
 		<div class="col-6 col-sm-4">
-			<p><?php echo date("Y"); ?> Quentin Tarantino Fan Club</p>
+			<p><?php echo date("Y"); ?> <?php echo get_bloginfo('name'); ?></p>
 		</div>
 		<div class="col-6 col-sm-4 d-flex justify-content-center">
-			<a href="">Contacto</a>
+			<!-- Menu goes here -->
+			<?php
+			wp_nav_menu(
+				array(
+					'theme_location'  => 'footer_menu',
+					'container_class' => '',
+					'container_id'    => 'navbarNavDropdown',
+					'menu_class'      => 'navbar-nav m-auto mb-2 mb-lg-0',
+					'fallback_cb'     => '',
+					'menu_id'         => 'main-left',
+					'depth'           => 2,
+					'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+				)
+			);
+			?>
 		</div>
-		<div class="
-            col-12 col-sm-4
-            d-flex
-            justify-content-center justify-content-md-end
-          ">
+		<div class="col-12 col-sm-4 d-flex justify-content-center justify-content-md-end">
 			<ul class="d-flex">
 				<li class="me-2">
 					<a href=""><i class="fab fa-instagram"></i></a>

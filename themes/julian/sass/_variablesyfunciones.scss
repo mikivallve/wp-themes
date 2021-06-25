@@ -1,31 +1,36 @@
 $primary: darkred;
 $navbar-light-color: black;
 $navbar-light-active-color: $primary;
-
-$font-family-sans-serif: "Montserrat", sans-serif;
-
+$font-family-sans-serif: 'Montserrat', sans-serif;
+$font-weight-base: 600;
 //mixin
 
 @mixin sizes($w) {
-  width: $w;
-  height: $w * 0.5625; //16:9
+    width: $w;
+    height: $w * 0.5625; //16:9
 }
 
 @mixin videoResponsive($width) {
-  @media (min-width: $width) {
-    .modal-body iframe {
-      @include sizes(($width)-54px);
+    @media (min-width: $width) {
+        .modal-body iframe {
+            @include sizes(($width)-54px);
+        }
     }
-  }
 }
-
 
 //extend
 
 %negrita {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 %sombrita {
-  box-shadow: 0 0 1.5rem  rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.3);
 }
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+);

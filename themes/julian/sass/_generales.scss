@@ -1,53 +1,88 @@
 li {
-  list-style: none;
+    list-style: none;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .navbar {
-  @extend %negrita;
+    @extend %negrita;
 }
 
 h1 {
-  font-weight: 700;
+    font-weight: 700;
 }
 
 h5 {
-  @extend %negrita;
+    @extend %negrita;
 }
 
 .card {
-  @extend %sombrita;
+    @extend %sombrita;
 }
 
 //anidación
 
 #bio {
-  background-image: url("../assets/img/blood.svg");
-  background-repeat: no-repeat;
-  section {
-    mix-blend-mode: multiply;
+    background-image: url('../assets/img/blood.svg');
+    background-repeat: no-repeat;
+    section {
+        mix-blend-mode: multiply;
 
-    div {
-      max-width: 936px;
-      margin: 0 auto;
-    }
+        div {
+            max-width: 936px;
+            margin: 0 auto;
+        }
 
-    h1 {
-      color: $primary;
-    }
+        h1 {
+            color: $primary;
+        }
 
-    p {
-      @extend %negrita;
-      margin-bottom: $spacer/2;
+        p {
+            @extend %negrita;
+            margin-bottom: $spacer/2;
+        }
     }
-  }
 }
 
 #carouselFilmografia {
-  max-width: 400px;
-  > div {
-    @extend %sombrita;
-  }
+    max-width: 400px;
+    > div {
+        @extend %sombrita;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: center;
+    }
+}
+
+.btn-outline-primary {
+    background: transparent;
+}
+
+.home {
+    background-color: $primary;
+}
+
+main {
+    @extend .container-md;
+}
+
+.home .listado li {
+    @extend .card;
+    img {
+        width: 100%;
+    }
+    > *:not(:first-child) {
+        margin: 0 1rem;
+    }
+    padding-bottom: 1rem;
+}
+
+.page-id-9 main {
+    background-image: url('/wp-content/uploads/2021/06/blood.svg');
+    background-repeat: no-repeat;
+    mix-blend-mode: multiply;
 }

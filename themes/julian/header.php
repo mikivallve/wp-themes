@@ -13,12 +13,12 @@
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class('class-name'); ?>>
 
 	<!--Nav -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container">
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="<?php echo site_url(); ?>">
 				<img src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/assets/img/logo.svg" alt="logo" width="160" />
 			</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
